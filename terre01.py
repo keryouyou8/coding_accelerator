@@ -1,11 +1,9 @@
-# Version 1
-import sys  
+import sys
 
 path = sys.argv[0]
 file_name = path.split("/")[-1]
 
 print(file_name)
-
 
 
 # Version 2
