@@ -14,7 +14,8 @@ print(file_name)
 
 
 
-# Version 2
+# # Version 2
+# path = sys.argv[0]
 # file_name = ""
 
 # for char in path[::-1]:  
@@ -25,7 +26,7 @@ print(file_name)
 
 
 
-# Version 3
+# # Version 3
 # import sys
 
 # path = sys.argv[0]
@@ -35,7 +36,7 @@ print(file_name)
 
 
 
-# Version 4
+# # Version 4
 # file_name = __file__.split("\\")[-1]
 
 # print(file_name)
