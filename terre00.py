@@ -1,12 +1,5 @@
-#Version 1
-first_letter = "a"
-last_letter = "z"
+first_letter = 97
+last_letter = 123
 
-for letter in range(ord(first_letter), ord(last_letter) + 1):
+for letter in range(first_letter, last_letter):
     print(chr(letter), end="")
-    
-#Version 2    
-#alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-
-#for lettre in alphabet:
-#    print(lettre, end="")
