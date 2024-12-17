@@ -7,7 +7,7 @@ for arg in sys.argv:
     arg_count += 1
 
 if arg_count != 2:
-    print("erreur: Problème d'argument.")
+    print("erreur : Un seul argument est requis.")
     sys.exit()
 
 string_to_count = sys.argv[1]

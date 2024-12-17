@@ -2,12 +2,8 @@ import sys
 
 print()
 
-arg_count = 0
-for arg in sys.argv:
-    arg_count += 1
-
-if arg_count != 2:
-    print("erreur: Problème d'argument.")
+if len(sys.argv) != 2:
+    print("erreur : Un seul argument est requis.")
     sys.exit()
 
 string_to_reverse = sys.argv[1]
