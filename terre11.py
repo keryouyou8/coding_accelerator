@@ -12,7 +12,7 @@ if arg_count != 2:
     sys.exit()
 
 time_24 = sys.argv[1]
-pattern = r"^[0-23]+([4-9])?:[0-5]+([6-9])?$" # regEx pour HH:MM
+pattern = r"^[0-2]+([3-9])?:[0-5]+([6-9])?$" # regEx pour HH:MM
 
 if not re.match(pattern, time_24):
     print("erreur: Respectez le format HH:MM et les plages horaires, 24h.")
