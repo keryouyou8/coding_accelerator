@@ -12,7 +12,7 @@ if arg_count != 2:
     sys.exit()
 
 time_24 = sys.argv[1]
-pattern = r"^[0-2]+([3-9])?:[0-5]+([6-9])?$" # regEx pour HH:MM
+pattern = r"^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$" # regEx pour HH:MM
 
 if not re.match(pattern, time_24):
     print("erreur: Respectez le format HH:MM et les plages horaires, 24h.")
@@ -21,11 +21,6 @@ if not re.match(pattern, time_24):
 hour_24, minutes = time_24.split(":")
 hour_24 = int(hour_24)
 minutes = int(minutes)
-
-
-if not (0 <= hour_24 <= 23):
-    print("erreur: Respectez les plages horaires, 24h.")
-    sys.exit()
 
 if hour_24 == 0:
     meridiem = "AM"
@@ -40,4 +35,14 @@ else:
     meridiem = "PM"
     hour_12 = hour_24 - 12
 
-print(f"{hour_12}:{minutes}{meridiem}")
+print(f"{hour_12}:{minutes:02}{meridiem}")
+
+# 11:35
+# 23:47
+# 24:44
+# 01:01
+# 75:45
+# 31:19
+# 26:45
+# 11:60
+# 1:33
