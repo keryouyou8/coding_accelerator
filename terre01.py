@@ -9,5 +9,4 @@ for char in path:
     else:
         file_name += char 
         
-print()
 print(file_name)

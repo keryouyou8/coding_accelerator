@@ -1,8 +1,6 @@
 import sys
 import re
 
-print()
-
 arg_count = 0
 for arg in sys.argv:
     arg_count += 1

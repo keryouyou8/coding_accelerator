@@ -1,6 +1,5 @@
 import sys
 
-print()
 
 if len(sys.argv) != 2:
     print("erreur : Un seul argument est requis.")
